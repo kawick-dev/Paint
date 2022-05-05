@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tracer des lignes avec Javascript">
+    <meta name="author" content="Julien Le Galès">
+    <title>PAINT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="header">
+        <h1>Paint</h1>
+        <div>
+            <button id="hand"><img src="images/pencil.png" alt="Main levé"></button>
+            <button id="ligne"><img src="images/line.png" alt="Ligne"></button>
+            <button id="navTexte"><img src="images/text.png" alt="Texte"></button>
+            <button id="rect"><img src="images/rectangle.png" alt="Rectangle"></button>
+            <button id="circle"><img src="images/oval.png" alt="Cercle"></button>
+            <button id="triangle"><img src="images/triangle.png" alt="Triangle"></button>
+            <button id="losange"><img src="images/losange.png" alt="Losange"></button>
+            <button id="gomme"><img src="images/gomme.png" alt="Gomme"></button>
+            <button id="save"><img src="images/save.png" alt="Save"></button>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <canvas id="canvas" class="border border-primary"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="text_input" id="showChose">
+        <p for="input_text">Entrez votre texte : </p>
+        <input type="input_text" id="input_text" name="input_text">
+        <button id="texte">Valider</button>
+    </div>
+
+    <!-- Couleur -->
+    <div class="lineColor">
+        <button id="noir"></button>
+        <button id="rouge"></button>
+        <button id="magenta"></button>
+        <button id="pourpre"></button>
+        <button id="violet"></button>
+        <button id="indigo"></button>
+        <button id="cyan"></button>
+        <button id="turquoise"></button>
+        <button id="vert"></button>
+        <button id="vertClaire"></button>
+        <button id="jaune"></button>
+        <button id="jauneOrange"></button>
+        <button id="orange"></button>
+
+        <!-- Taille -->
+        <select id="tailleLigne">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20" selected>20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+        </select>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/formes.js">
+    </script>
+    <script src="js/evenements.js">
+    </script>
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>
